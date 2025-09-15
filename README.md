@@ -33,7 +33,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>Na maken van de Coldplay website</summary>
+  <summary>Website too good to go</summary>
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
@@ -59,6 +59,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  website is redelijk te lezen met een wazige bril op
+  met vingers vastgebonden elastiekje is de website makkelijk te navigeren.
+  voor de voice over is de website bijna niet te volgen. De navigatie balk wordt niet voorgelezen en hij blijft hangen bij kopstuk 1 vn de website daarna is het niet mogelijk om verder naar beneden te gaan. 
+  het is niet mogelijk om met het toetsenbord door de website heen te navigeren. 
 
 </details>
 

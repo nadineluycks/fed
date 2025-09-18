@@ -48,7 +48,7 @@ body {
 
 
 /* jouw code */
-img:nth-of-type(1) {
+header img:nth-of-type(1) {
 	position: absolute;
 	/* doe de position op fixed om hem vast te zetten op de website*/
 	top: 2em;
@@ -76,7 +76,7 @@ video {
 
 header>section:nth-of-type(2) {
 	position: absolute;
-	top: 50%;
+	top: 75%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
@@ -94,15 +94,15 @@ header>section:nth-of-type(2) {
 		display: inline-block;
 		margin: 10px;
 		padding: 12px 24px;
-		background: rgba(0, 0, 0, 0.6);
 		color: #fff;
 		text-decoration: none;
-		border-radius: 8px;
+		border: solid white ;
 		transition: background 0.3s;
 	}
 
 	& a:hover {
 		color: #285F5E;
+		border-color: #285F5E;
 	}
 }
 
@@ -115,6 +115,7 @@ section:nth-child(1) {
 	margin: 0;
 }
 
+
 ul:nth-child(1) {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -122,10 +123,7 @@ ul:nth-child(1) {
 	gap: 1em;
 }
 
-.andere-font p {
-	margin: 0;
-}
-
+/*
 .andere-font p:nth-of-type(odd) {
 	text-align: end;
 }
@@ -138,8 +136,21 @@ ul:nth-child(1) {
 	grid-column: 1/-1;
 	text-align: center;
 }
+*/ 
 
 section:nth-child(2) {
 	background-color: #285F5E;
 	color: #e9d9d2;
+}
+
+section:nth-of-type(1) div{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+section:nth-of-type(1) div img{
+	max-width: 170px;
+	
 }

@@ -116,27 +116,28 @@ section:nth-child(1) {
 }
 
 
-ul:nth-child(1) {
+ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1em;
 	gap: 1em;
+	list-style: none;
 }
 
-/*
-.andere-font p:nth-of-type(odd) {
+
+li:nth-of-type(odd) {
 	text-align: end;
 }
 
-.andere-font p:nth-of-type(even) {
+li:nth-of-type(even) {
 	text-align: start;
 }
 
-.andere-font h2 {
+ul {
 	grid-column: 1/-1;
 	text-align: center;
 }
-*/ 
+
 
 section:nth-child(2) {
 	background-color: #285F5E;
@@ -154,3 +155,52 @@ section:nth-of-type(1) div img{
 	max-width: 170px;
 	
 }
+
+article > img:nth-of-type(1) {
+	position: relative;
+	margin: 0;
+	width: 15em;
+	height: auto;
+	
+
+}
+
+/* > zorgt ervoor dat die niet perongeluk de eerste twee apple en google ook mee pakt*/
+article > img:nth-of-type(2) {
+	position: absolute;
+	width: 7em;
+	height: auto;
+	z-index: 1000; /*index z zorgt ervoor dat die afbeelding boven op komt te zitten*/
+}
+
+main section:nth-of-type(3){
+	color:#f9f3f0;
+	background-color: #00615f;
+	text-align: center;
+	font-family: "Tenon Regular";
+	
+	
+}
+section > img{
+width: 100%;
+height: auto;
+}
+
+section > a{
+	display: inline-block;
+	margin: 10px;
+	padding: 12px 24px;
+	color: #fff;
+	text-decoration: none;
+	border: solid white ;
+	transition: background 0.3s;
+
+	& a:hover {
+		color: #285F5E;
+		border-color: #285F5E;
+	}
+}
+
+/* hoe krijg ik de afbeeldingen bij stap 1 goed naast/ op elkaar? en waarom werkt hier mijn hoever niet?*/
+
+

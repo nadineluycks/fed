@@ -19,6 +19,8 @@
 	box-sizing: border-box;
 }
 
+/* Feedback danny: 1. custom properties voor alle kleuren, 2. pixels weghalen en relative unites gebruiken 3. 
+
 
 
 
@@ -46,17 +48,43 @@ body {
 	background-color: #f9f3f0;
 }
 
+h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+a {
+	display: inline-block;
+	margin: 10px;
+	padding: 12px 24px;
+	color: #fff;
+	text-decoration: none;
+	border: solid white ;
+	transition: background 0.3s;
+}
+
+ a:hover {
+	color: #285F5E;
+	border-color: #285F5E;
+}
+
+nav {
+	background-image: linear-gradient(180deg, rgb(46, 45, 45) , #39817F);
+	height: 10em;	
+}
 
 /* jouw code */
 header img:nth-of-type(1) {
 	position: absolute;
 	/* doe de position op fixed om hem vast te zetten op de website*/
-	top: 2em;
-	left: 2em;
-	width: 5em;
+	top: 1em;
+	left: 1em;
+	width: 7em;
 	height: auto;
-	z-index: 1000;
+	z-index: 1;
 }
+
 
 header>section:first-of-type() {
 	position: relative;
@@ -67,46 +95,22 @@ header>section:first-of-type() {
 }
 
 video {
-	width: 100dvw;
-	height: 100dvh;
+	width: 100vw;
+	height: 100vh;
 	object-fit: cover;
 }
 
-
-
 header>section:nth-of-type(2) {
 	position: absolute;
-	top: 75%;
+	top: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
 	text-align: center;
 	font-family: "Korolev Heavy";
 	line-height: 1;
-
-	& h1 {
-		font-size: 3rem;
-		margin-bottom: 20px;
-		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-	}
-
-	& a {
-		display: inline-block;
-		margin: 10px;
-		padding: 12px 24px;
-		color: #fff;
-		text-decoration: none;
-		border: solid white ;
-		transition: background 0.3s;
-	}
-
-	& a:hover {
-		color: #285F5E;
-		border-color: #285F5E;
-	}
 }
-
-
+	
 section:nth-child(1) {
 	color: #00615f;
 	background-color: #f9f3f0;
@@ -152,8 +156,7 @@ section:nth-of-type(1) div{
 
 
 section:nth-of-type(1) div img{
-	max-width: 170px;
-	
+	max-width: 7em;
 }
 
 article > img:nth-of-type(1) {
@@ -170,7 +173,7 @@ article > img:nth-of-type(2) {
 	position: absolute;
 	width: 7em;
 	height: auto;
-	z-index: 1000; /*index z zorgt ervoor dat die afbeelding boven op komt te zitten*/
+	z-index: 1; /*index z zorgt ervoor dat die afbeelding boven op komt te zitten*/
 }
 
 main section:nth-of-type(3){
@@ -186,21 +189,24 @@ width: 100%;
 height: auto;
 }
 
-section > a{
-	display: inline-block;
-	margin: 10px;
-	padding: 12px 24px;
-	color: #fff;
-	text-decoration: none;
-	border: solid white ;
-	transition: background 0.3s;
-
-	& a:hover {
-		color: #285F5E;
-		border-color: #285F5E;
+section:nth-of-type(5) article:not(:first-of-type) {
+	border: 2px solid rgb(190, 187, 187);
+	display: block;
+	text-align: center;
+	margin: 3em;
+	
+	&:hover {
+	color: #285F5E;
+	border-color: #285F5E;
 	}
 }
 
-/* hoe krijg ik de afbeeldingen bij stap 1 goed naast/ op elkaar? en waarom werkt hier mijn hoever niet?*/
+section:nth-of-type(2) img{
+	display: grid;
+	grid-column-start: 3;
+	grid-column-end: five;
+	padding: 2em;
+
+}
 
 

@@ -17,6 +17,8 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /* Feedback danny: 1. custom properties voor alle kleuren, 2. pixels weghalen en relative unites gebruiken 3. 
@@ -40,9 +42,6 @@
 /****************/
 
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 	font-family: "Tenon Regular";
 	color: #00615f;
 	background-color: #f9f3f0;
@@ -69,11 +68,16 @@ a {
 	border-color: #285F5E;
 }
 
-nav {
-	background-image: linear-gradient(180deg, rgb(46, 45, 45) , #39817F);
-	height: 10em;	
+header div {
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    background-image: linear-gradient(180deg, rgb(46, 45, 45), transparent 60%);
 }
 
+nav {
+	height: 10em;
+}
 /* jouw code */
 header img:nth-of-type(1) {
 	position: absolute;
@@ -84,7 +88,6 @@ header img:nth-of-type(1) {
 	height: auto;
 	z-index: 1;
 }
-
 
 header>section:first-of-type() {
 	position: relative;
@@ -100,7 +103,7 @@ video {
 	object-fit: cover;
 }
 
-header>section:nth-of-type(2) {
+header > section:nth-of-type(2) {
 	position: absolute;
 	top: 90%;
 	left: 50%;
@@ -181,9 +184,8 @@ main section:nth-of-type(3){
 	background-color: #00615f;
 	text-align: center;
 	font-family: "Tenon Regular";
-	
-	
 }
+
 section > img{
 width: 100%;
 height: auto;
@@ -195,18 +197,39 @@ section:nth-of-type(5) article:not(:first-of-type) {
 	text-align: center;
 	margin: 3em;
 	
-	&:hover {
+	
+	 &:hover {
 	color: #285F5E;
 	border-color: #285F5E;
-	}
+	} 
 }
 
-section:nth-of-type(2) img{
+section:nth-of-type(5) p:first-of-type {
+	margin-bottom: 3em;
+}
+
+section:nth-of-type(5) article div{
 	display: grid;
-	grid-column-start: 3;
-	grid-column-end: five;
-	padding: 2em;
-
+	grid-template-columns: repeat(6, 3em);
+	grid-template-rows: repeat(6, 3em);
 }
 
+section:nth-of-type(5) article div img:nth-of-type(1) {
+	grid-column: 5 / 7;
+	z-index: 2;
+}
 
+section:nth-of-type(5) article div img:nth-of-type(2) {
+	grid-column: 2 /4 ;
+}
+
+section:nth-of-type(5) img:nth-of-type(1){
+	grid-template: 'a';
+	height: 116px;
+	width: 116px;
+}
+
+section:nth-of-type(5) img:nth-of-type(2){
+	height: 220px;
+	width: 220px;
+}

@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Tenon Regular";
-	src: url("/fonts/tenon_regular.woff2");
+	src: url('./fonts/tenon_regular.woff2');
 }
 
 @font-face {
 	font-family: "Korolev Heavy";
-	src: url("/fonts/korolev_heavy.040424.woff2");
+	src: url('/fonts/korolev_heavy.040424.woff2');
 }
 
 @font-face {
@@ -129,6 +129,7 @@ section:nth-child(1) p {
 
 section:nth-child(1) h2 {
 	padding:2em;
+	font-family: "Korolev Heavy";
 	}
 
 

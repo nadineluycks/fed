@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Tenon Regular";
-	src: url('./fonts/tenon_regular.woff2');
+	src: url('/fonts/tenon_regular.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: "Korolev Heavy";
-	src: url('/fonts/korolev_heavy.040424.woff2');
+	src: url('/fonts/korolev_heavy.040424.woff2') format('woff');
 }
 
 @font-face {

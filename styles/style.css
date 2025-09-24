@@ -32,6 +32,7 @@
 
 :root {
 	--text-color: black;
+
 }
 
 
@@ -120,7 +121,15 @@ section:nth-child(1) {
 	text-align: center;
 	font-family: "Tenon Regular";
 	margin: 0;
+	
+}	
+section:nth-child(1) p {
+	padding:2em;
 }
+
+section:nth-child(1) h2 {
+	padding:2em;
+	}
 
 
 ul {
@@ -130,7 +139,6 @@ ul {
 	gap: 1em;
 	list-style: none;
 }
-
 
 li:nth-of-type(odd) {
 	text-align: end;
@@ -151,7 +159,7 @@ section:nth-child(2) {
 	color: #e9d9d2;
 }
 
-section:nth-of-type(1) div{
+section:nth-of-type(1) div {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -162,22 +170,22 @@ section:nth-of-type(1) div img{
 	max-width: 7em;
 }
 
-article > img:nth-of-type(1) {
+/* article > img:nth-of-type(1) {
 	position: relative;
 	margin: 0;
 	width: 15em;
 	height: auto;
-	
-
 }
 
 /* > zorgt ervoor dat die niet perongeluk de eerste twee apple en google ook mee pakt*/
-article > img:nth-of-type(2) {
+/* article > img:nth-of-type(2) {
 	position: absolute;
-	width: 7em;
+	width: 2em;
 	height: auto;
-	z-index: 1; /*index z zorgt ervoor dat die afbeelding boven op komt te zitten*/
+	z-index: 1; /*index z zorgt ervoor dat die afbeelding boven op komt te zitten
 }
+	*/
+
 
 main section:nth-of-type(3){
 	color:#f9f3f0;
@@ -233,3 +241,29 @@ section:nth-of-type(5) img:nth-of-type(2){
 	height: 220px;
 	width: 220px;
 }
+
+section:nth-of-type(2) div li{
+	display: flex;
+	overflow: auto;
+}
+
+section:nth-of-type(2) article div{
+	display: grid;
+	grid-template-columns: repeat(6, 3em);
+	grid-template-rows: repeat(6, 3em);
+	border: 2px solid #f09;
+}
+
+section:nth-of-type(2) article img:nth-of-type(1) {
+	grid-column: 5 / 7;
+	z-index: 2;
+	height: 220px;
+	width:220px;
+}
+
+section:nth-of-type(2) article img:nth-of-type(2) {
+	grid-column: 2 / 4;
+	height: 116px;
+	width:116px;
+}
+

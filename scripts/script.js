@@ -1,28 +1,27 @@
 // JavaScript Document
 console.log("hi");
-// selecteer de knoppen
-// const openButton = document.querySelector("header nav button"); 
-// const sluitButton = document.querySelector("header nav button");  
-// const deNav = document.querySelector("header nav");                
 
-// // klik op hamburger → schuif menu naar rechts
-// openButton.addEventListener("click", () => {
-//   deNav.classList.add('open');
-// });
 
-// // klik op kruisje → schuif menu terug naar links
-// sluitButton.addEventListener("click", () => {
-//   deNav.classList.remove('open');
-// });
 
-const openButton = document.querySelector(".open-menu"); 
-const sluitButton = document.querySelector(".sluit-menu");  
-const deNav = document.querySelector("header nav");                
+/* Zoeken van element in HTML, dit kan dus met die queryselector. De naam ervoor mag je zelf bedenken, het gebruik van classes voor deze dingen is niet erg  */
 
-openButton.addEventListener("click", () => {
-  deNav.classList.add("open");
-});
 
-sluitButton.addEventListener("click", () => {
-  deNav.classList.remove("open");
-});
+openButton = document.querySelector(".openKnop");
+sluitButton = document.querySelector(".sluitKnop");
+menuZelf = document.querySelector("header nav > div");
+
+/* Hiermee kan je een opdracht geven aan de knop die je eerder hebt opgehaald, in dit geval een klik. Aan het einde geef je een "handle" mee zodat je hem later weer kan gebruiken  */
+
+openButton.addEventListener("click", openMenu);
+sluitButton.addEventListener("click", sluitMenu);
+
+/* Tenslotte geef je een functie mee zodat ie ook werkt, hier gebruik je eerst dat "handle" en met classlist.add kan je een ding uit CSS meegeven. Hier is dat de open class. Daarna doe je hetzelfde voor de sluitbutton, in plaats van add doe je dan remove. */
+
+
+function openMenu() {
+    menuZelf.classList.add("open");
+}
+
+function sluitMenu() {
+    menuZelf.classList.remove("open");
+}

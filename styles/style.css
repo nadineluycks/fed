@@ -1,17 +1,17 @@
 @font-face {
 	font-family: "Tenon Regular";
-	src: url("/fonts/tenon_regular.woff2") format('woff2');
+	src: url("/fed/fonts/tenon_regular.woff2");
 }
 
 @font-face {
 	font-family: "Korolev Heavy";
-	src: url("/fonts/korolev_heavy.040424.woff2") format('woff2');
+	src: url("/fed/fonts/korolev_heavy.woff2") format('woff2');
 
 }
 
 @font-face {
 	font-family: "Kongapro";
-	src: url("/fonts/kongapro.040724.woff2");
+	src: url("/fed/fonts/kongapro.woff2");
 }
 
 *,
@@ -47,7 +47,7 @@
 /****************/
 
 body {
-	font-family: "Tenon Regular";
+	font-family: "Tenon Regular", sans-serif;
 	color: var(--color-primary);
 	background-color: #f9f3f0;
 	overflow-x: hidden;

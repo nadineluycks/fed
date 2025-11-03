@@ -931,7 +931,7 @@ select {
 	flex-direction: row;
 }
 
-form a {
+form button {
 	font-family: "korolev Heavy";
 	color: var(--color-background);
 	border: solid 1px var(--color-background);

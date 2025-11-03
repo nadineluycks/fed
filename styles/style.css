@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Tenon Regular";
-	src: url("/fonts/tenon_regular.woff2");
+	src: url("/fonts/tenon_regular.woff2") format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: "Kongapro";
-	src: url("/fonts/kongapro.woff2");
+	src: url("/fonts/kongapro.woff2") format('woff2');
 }
 
 *,

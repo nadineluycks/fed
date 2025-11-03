@@ -1,11 +1,12 @@
 @font-face {
 	font-family: "Tenon Regular";
-	src: url('/fonts/tenon_regular.woff2') format('woff2');
+	src: url("/fonts/tenon_regular.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "Korolev Heavy";
-	src: url('/fonts/korolev_heavy.040424.woff2') format('woff');
+	src: url("/fonts/korolev_heavy.040424.woff2") format('woff2');
+
 }
 
 @font-face {
@@ -50,8 +51,10 @@ body {
 	color: var(--color-primary);
 	background-color: #f9f3f0;
 	overflow-x: hidden;
-	max-width: 375px;
+	width:375px;
+	margin-right: 1em;
 }
+
 
 h1 {
 	font-size: 3em;
@@ -70,6 +73,7 @@ a {
 	font-family: "Korolev Heavy";
 }
 
+
 header nav {
 	position: fixed;
 	z-index: 10;
@@ -84,21 +88,82 @@ header ul {
 	flex-wrap: nowrap;
 }
 
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+	row-gap: 4em;
+}
+
+/* eerste 3 blijven standaard in 3 kolommen */
+
+/* alle li NA de 3e worden full-width */
+.nav-grid li:nth-child(n+4) {
+    grid-column: 1 / -1; 
+}
+
+.nav-grid li {
+    padding: 0.25em;
+    text-align: left;
+	color: var(--color-primary);
+	font-family: "Korolev Heavy";
+}
+
+.nav-grid a {
+	color: var(--color-primary);
+	border: solid var(--color-primary);
+}
+nav a {
+	color: var(--color-background);
+	border: solid var(--color-background);
+	width: 11em;
+}
 
 header nav > div {
 	position: fixed;
 	inset: 0;
 	background-color: var(--color-primary);
 	transform: translateX(100%);
-	transition: .2s;
+	transition: 0.2s;
 	z-index: 30;
 }
 
-header nav>div.open {
+header nav > div.open {
 	transform: translate(0%);
-	background: var(--color-primary);
+	background: var(--color-background);
 }
 
+header nav > div.dark-mode {
+background-color: var(--color-primary);
+color:var(--color-neutral-light);
+}
+button#dark-mode.dark-active {
+	color: var(--color-primary);
+	background-color: white;
+  }
+header nav > div.dark-mode a {
+	color: var(--color-background);
+	border-color: var(--color-background);
+  }
+  
+  header nav > div.dark-mode li {
+	color: var(--color-background);
+  }
+
+#dark-mode {
+	display: inline-block;
+	margin: 0.625em;
+	padding: 0.75em 1.5em;
+	color: var(--color-primary);
+	text-decoration: none;
+	border: solid var(--color-primary);
+	transition: 0.3s;
+	font-family: "Korolev Heavy";
+}
+/* hamburger menu button */
+button:nth-of-type(1) {
+	background:none; 
+	border: none;
+}
 
 
 header div {
@@ -142,6 +207,7 @@ section:nth-child(1) {
 	background-color: var(--color-background);
 	text-align: center;
 	font-family: "Tenon Regular";
+	line-height: 2em;
 	margin: 0;
 
 }
@@ -190,6 +256,29 @@ section:nth-of-type(1) li:nth-of-type(even) {
 ul {
 	grid-column: 1/-1;
 	text-align: center;
+}
+
+section:nth-of-type(1) li {
+	display: grid;
+	grid-template-rows: auto auto; /* img boven, tekst onder */
+	justify-items: start; /* standaard links — even items */
+	gap: 0.5em;
+}
+
+section:nth-of-type(1) li:nth-of-type(odd) {
+	justify-items: end; /* img + tekst naar rechts */
+	text-align: end;
+	margin-left: 1em;
+}
+
+section:nth-of-type(1) li:nth-of-type(even) {
+	justify-items: start; /* img + tekst naar links */
+	text-align: start;
+}
+
+section:nth-of-type(1) li img {
+	width: 3.125em; /* of jouw maat */
+	height: auto;
 }
 
 
@@ -286,12 +375,16 @@ section:nth-of-type(3) ul {
 	padding: 1em;
 }
 
+.knopjes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .knopjes a {
 	display: inline-block;
-	width: 0.25em;
-	height: 0.25em;
+	padding: 0.25em;
 	border-radius: 100%;
-	background: var(--color-text-muted);
+	background: var(--color-primary);
 	margin: 1em;
 }
 
@@ -337,10 +430,11 @@ section:nth-of-type(6) article:first-of-type h4 {
 	font-size: 1.5em;
 }
 
-section:nth-of-type(6) p {
-	color: var(--color-text-dark);
+section:nth-of-type(6) p:not(:first-of-type) {
+	color: var(--color-primary);
 	text-align: center;
 	margin: 1em;
+	font-size: 0.8em;
 }
 
 section:nth-of-type(6) article:not(:first-of-type) {
@@ -351,7 +445,9 @@ section:nth-of-type(6) article:not(:first-of-type) {
 }
 
 section:nth-of-type(6) p:first-of-type {
-	margin-bottom: 3em;
+	color: var(--color-text-dark);
+	padding: 1em;
+	margin-bottom: 2em;
 }
 
 section:nth-of-type(6) article div {
@@ -672,7 +768,6 @@ footer section:nth-of-type(2) li {
 	font-family: "korolev Heavy";
 	color: var(--color-primary);
 	border: solid 0.063em var(--color-primary);
-
 }
 
 .paginatwee section:nth-of-type(6)>ul {
@@ -697,7 +792,6 @@ footer section:nth-of-type(2) li {
 	color: var(--color-background);
 }
 
-/* check ff deze hieronder */
 
 .paginatwee section:nth-of-type(7) details {
 	border-radius: 0.5em;
@@ -728,7 +822,6 @@ footer section:nth-of-type(2) li {
 	font-weight: bold;
 	position: relative;
 	padding-right: 1.5em;
-	/* ruimte voor het icoon */
 }
 
 .paginatwee summary::after {
@@ -746,6 +839,22 @@ footer section:nth-of-type(2) li {
 	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" stroke="white" stroke-width="2"/></svg>');
 }
 
+.paginatwee details[open] summary::after {
+	animation: bounceScale 0.3s ease forwards;
+  }
+  
+  @keyframes bounceScale {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(3);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  
 .paginatwee section:nth-of-type(8) {
 
 	background-color: #005250;
@@ -817,7 +926,7 @@ select {
 	background-color: var(--color-primary);
 }
 
-#Telefoonnummer {
+#Tel {
 	display: flex;
 	flex-direction: row;
 }

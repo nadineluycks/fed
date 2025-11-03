@@ -15,23 +15,25 @@
     <header>
         <nav>
 			<ul>
-			  <li> <img src="images/logo2.png" alt="Logo Too Good To Go"></li>
-			  <li><a href="index.html">Home Pagina</a></li>
-			  <li><button class="openKnop"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-				<path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-				<path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-				</svg></button></li>
+				<li> <img src="images/logo2.png" alt="Logo Too Good To Go"></li>
+				<li><a href="index.html">DOWNLOAD DE APP</a></li>
+				<li><button class="openKnop"> <img src="images/hamburger-menu-icon-png-29.jpg" alt="Hamburger menu"></button></li>
 			</ul>
+
 			<!-- ander kleur nav balk -->
 			<div>
-			<ul>
-			  <li>Ander kleur Logo</li>
-			  <li><a href="paginatwee.html">Pagina twee</a></li>
-			  <li><button class="sluitKnop">X</button></li>
-			</ul>
+				<ul class="nav-grid">
+					<li><img src="images/logohamburger.png" alt="Logo Too Good To Go"></li>
+					<li><a href="index.html">DOWNLOAD DE APP</a></li>
+					<li><button class="sluitKnop">X</button></li>
+				
+					<li>DE APP</li>
+					<li>ONZE BEDRIJFSOPLOSSINGEN</li>
+					<li>OVER ONS</li>
+					<li>OVER VOEDSELVERSPILLING</li>
+				</ul>
 			</div>
-		  </nav>
+		</nav>
     </header>
 
     <main>
@@ -367,22 +369,22 @@
 
                 <form action="/action_page.php">
 
-                    <label for="Wat typeert je het beste">Wat typeert je het beste *</label>
+                    <label for="typeert">Wat typeert je het beste *</label>
                     <select id="typeert" name="typeert">
-                        <option value=""></option>
+                        <option value="">.</option>
                         <option value="levensmiddelen bedrijf">levensmiddelen bedrijf</option>
-                        <option value="consumemt">Consument (ik wil de Verassingspakketten)</option>
+                        <option value="consument">Consument (ik wil de Verassingspakketten)</option>
                     </select>
 
-                    <label for="Bedrijfsnaam">Bedrijfsnaam *</label>
+                    <label for="bedrijfsnaam">Bedrijfsnaam *</label>
                     <input type="text" id="bedrijfsnaam" name="bedrijfsnaam" placeholder="de naam van uw bedrijf">
 
                     <label for="email">Email *</label>
                     <input type="text" id="email" name="email" placeholder="jouw professioneel adres">
 
-                    <label for="Telefoonnummer"> Telefoonnummer *</label>
-                    <div id="Telefoonnummer">
-                        <select name="Telefoonnummer">
+                    <label for="telefoonnummer"> Telefoonnummer *</label>
+                    <div id="tel">
+                        <select name="telefoonnummer">
                             <option value="+31">🇳🇱+31</option>
                         </select>
                         <input type="text" id="telefoonnummer" name="telefoonnummer"
@@ -390,7 +392,7 @@
                     </div>
 
                     <label for="stad">Stad *</label>
-                    <input id="stad" name="stad" placeholder="Waar bent u gevestigd?"></input>
+                    <input id="stad" name="stad" placeholder="Waar bent u gevestigd?"/>
 
                     <!-- Bron: voor een checkbox maken https://www.w3schools.com/howto/howto_css_custom_checkbox.asp -->
                     <label class="checkbox">

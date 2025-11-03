@@ -25,3 +25,26 @@ function openMenu() {
 function sluitMenu() {
     menuZelf.classList.remove("open");
 }
+
+const toggleButton = document.getElementById('dark-mode');
+const navMenu = document.querySelector('nav > div');
+
+const savedMode = localStorage.getItem('mode');
+if (savedMode === 'dark') {
+  navMenu.classList.add('dark-mode');
+  toggleButton.textContent = 'Light mode';
+}
+
+toggleButton.addEventListener('click', () => {
+  navMenu.classList.toggle('dark-mode');
+  toggleButton.classList.toggle('dark-active');
+
+
+  if (navMenu.classList.contains('dark-mode')) {
+    toggleButton.textContent = 'Light mode';
+    localStorage.setItem('mode', 'dark');
+  } else {
+    toggleButton.textContent = 'Dark mode';
+    localStorage.setItem('mode', 'light');
+  }
+});

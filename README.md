@@ -187,7 +187,7 @@ importeer ook nog even je font!
   ### Dit was lastig/Is niet gelukt:
  Ik probeerde de peiltjes bij de linkjes te plaatsen dit is mij niet gelukt ik kreeg ze er wel op doormiddel van een grid te gebruiken maar ik vond de afwerking er zo lelijk van dat het niet de moeite waard was om het op de website te houden tevens werden de link buttons zo groot dat ze bijna niet meer op de pagina paste. 
 
- Ook krijg ik de fonts niet geladen op de website eerst deed die het op mijn computer wel maar toen liep mijn github desktop vast op mijn eerste versie en werkte die niet bij toen dacht ik dat ik alles kwijt was toen vond ik mijn huidige versie weer echter kan ik de fonts nu helemaal niet meer zien. ik heb aan chat gpt gevraagd waarom die het niet doet maar die weet het ook niet. 
+ Ook krijg ik de fonts niet geladen op de website eerst deed die het op mijn computer wel maar toen liep mijn github desktop vast op mijn eerste versie en werkte die niet bij toen dacht ik dat ik alles kwijt was toen vond ik mijn huidige versie weer echter kan ik de fonts nu helemaal niet meer zien. ik heb aan chat gpt gevraagd waarom die het niet doet maar die weet het ook niet. Ik heb de fonts eruit en er opnieuw ingezet maar ik blijf elke keer dezelfde meldingen krijgen ik heb ook nog gebeld met een student assistenten toen deed hij het weer via mijn live variant maar nu is die daar ook weer mee gestopt. 
 
   <img src="readme-images/pijlstruggle.png" width="375px" alt="bummer">
   <img src="readme-images/pijlstrugglehtml.png" width="375px" alt="bummer">
@@ -213,6 +213,6 @@ Ik heb heel veel hulp gekregen van de student assistentes.
   3. https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp 
   4. https://codepen.io/dmr0m/pen/VYeeVQX (gemaakt door student assistent Damian)
   5. https://css-tricks.com/css-only-carousel/
-  6. 
+  6. https://chatgpt.com/share/690974f2-8038-8012-a478-44081b4a1ffb
 
 </details>

@@ -48,3 +48,19 @@ toggleButton.addEventListener('click', () => {
     localStorage.setItem('mode', 'light');
   }
 });
+
+
+// https://chatgpt.com/share/690974f2-8038-8012-a478-44081b4a1ffb
+
+const video = document.getElementById('video');
+const button = document.getElementById('pauze');
+
+button.addEventListener('click', function ()  {
+    if (video.paused) {
+        video.play();
+        btn.textContent = 'Pause';
+    } else {
+        video.pause();
+        btn.textContent = 'Play';
+    }
+});

@@ -48,6 +48,8 @@
 
 body {
 	font-family: "Tenon Regular", sans-serif;
+	font-family: "Kongapro", sans-serif;
+	font-family: "Korolev Heavy", sans-serif;
 	color: var(--color-primary);
 	background-color: #f9f3f0;
 	overflow-x: hidden;

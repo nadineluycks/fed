@@ -142,7 +142,14 @@ importeer ook nog even je font!
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
- mist nog veel labels van de fotos heb ik er nog niet in gezet! pagina is wel klikbaar.
+ Inmiddels is de website goed toeganklijk ook doordat er nu een dark light mode is toegevoegd en een pauzeer knop op de video. Het lettertype krijg ik helaas niet goed hierdoor is de website minder mooi te lezen. 
+
+<img src="readme-images/wcageen.png" width="375px" alt="toegankelijkheid test">
+<img src="readme-images/wcagtwee.png" width="375px" alt="toegankelijkheid test">
+<img src="readme-images/wcagdrie.png" width="375px" alt="toegankelijkheid test">
+<img src="readme-images/wcagvier.png" width="375px" alt="toegankelijkheid test">
+<img src="readme-images/wcagvijf.png" width="375px" alt="toegankelijkheid test">
+
 </details>
 
 
@@ -174,7 +181,7 @@ importeer ook nog even je font!
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/play.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
